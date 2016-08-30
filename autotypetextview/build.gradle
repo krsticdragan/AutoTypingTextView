@@ -1,5 +1,31 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'AutoTypeTextView'
+    bintrayName = 'AutoTypingTextView'
+
+    publishedGroupId = 'com.krsticdragan'
+    libraryName = 'AutoTypingTextView'
+    artifact = 'autotypetextview'
+
+    libraryDescription = 'Simple typing effect for TextView'
+
+    siteUrl = 'https://github.com/krsticdragan/AutoTypingTextView'
+    gitUrl = 'https://github.com/krsticdragan/AutoTypingTextView.git'
+
+    libraryVersion = '1.0'
+
+    developerId = 'krsticdragan'
+    developerName = 'Krstic Dragan'
+    developerEmail = 'info@dragankrstic.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+
+
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.1"
@@ -23,3 +49,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.2.0'
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+
