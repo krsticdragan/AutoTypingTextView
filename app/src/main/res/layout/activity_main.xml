@@ -1,20 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:attv="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.noriax.autotypingtextview.MainActivity">
 
-    <com.noriax.autotypingtextview.AutoTypeTextView
-        android:id="@+id/lblText"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
+        android:text="AutoTypeWithoutMistakes"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <com.noriax.autotypingtextview.AutoTypeTextView
+        android:id="@+id/lblTextWithoutMistakes"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Hello World!"
+        android:textSize="60dp"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-</RelativeLayout>
+        android:layout_centerHorizontal="true"
+        attv:animateTextTypeWithoutMistakes="Hello World!" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AutoTypeWithMistakes"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <com.noriax.autotypingtextview.AutoTypeTextView
+        android:id="@+id/lblTextWithMistakes"
+        android:text="Hello World!"
+        attv:typingPrecision="2"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        attv:typingSpeed="1"
+        attv:animateTextTypeWithMistakes="Hello World! This is example of typing a text with mistakes" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="animateEncryption"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <com.noriax.autotypingtextview.AutoTypeTextView
+        android:id="@+id/lblTextEncryption"
+        android:text="Hello World!"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        attv:animateEncryption="Hello World" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="animationDecryption"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <com.noriax.autotypingtextview.AutoTypeTextView
+        android:id="@+id/lblTextDecryption"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        attv:decryptionSpeed="5"
+        attv:animateDecryption="Hello World!" />
+        </LinearLayout>
+</LinearLayout>

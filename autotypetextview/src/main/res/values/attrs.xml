@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="AutoTypeTextView">
+        <attr name="animateTextTypeWithoutMistakes" format="string"/>
+        <attr name="animateTextTypeWithMistakes" format="string"/>
+        <attr name="animateEncryption" format="string"/>
+        <attr name="animateDecryption" format="string"/>
+
+        <attr name="typingSpeed" format="integer"/>
+        <attr name="decryptionSpeed" format="integer"/>
+        <attr name="encryptionSpeed" format="integer"/>
+        <attr name="typingPrecision" format="integer"/>
+    </declare-styleable>
+</resources>
