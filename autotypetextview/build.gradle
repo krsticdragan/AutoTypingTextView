@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/krsticdragan/AutoTypingTextView'
     gitUrl = 'https://github.com/krsticdragan/AutoTypingTextView.git'
 
-    libraryVersion = '1.0'
+    libraryVersion = '1.1'
 
     developerId = 'krsticdragan'
     developerName = 'Krstic Dragan'

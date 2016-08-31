@@ -15,7 +15,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-    <com.noriax.autotypingtextview.AutoTypeTextView
+    <com.dragankrstic.autotypetextview.AutoTypeTextView
         android:id="@+id/lblTextWithoutMistakes"
         android:layout_weight="1"
         android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-    <com.noriax.autotypingtextview.AutoTypeTextView
+    <com.dragankrstic.autotypetextview.AutoTypeTextView
         android:id="@+id/lblTextWithMistakes"
         android:text="Hello World!"
         attv:typingPrecision="2"
@@ -53,7 +53,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-    <com.noriax.autotypingtextview.AutoTypeTextView
+    <com.dragankrstic.autotypetextview.AutoTypeTextView
         android:id="@+id/lblTextEncryption"
         android:text="Hello World!"
         android:layout_weight="1"
@@ -71,7 +71,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-    <com.noriax.autotypingtextview.AutoTypeTextView
+    <com.dragankrstic.autotypetextview.AutoTypeTextView
         android:id="@+id/lblTextDecryption"
         android:layout_weight="1"
         android:layout_width="wrap_content"

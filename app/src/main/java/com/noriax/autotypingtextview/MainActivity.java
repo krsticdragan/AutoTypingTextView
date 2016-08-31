@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.dragankrstic.autotypetextview.AutoTypeTextView;
+
 public class MainActivity extends AppCompatActivity {
     AutoTypeTextView lblTextWithMistakes, lblTextWithoutMistakes, lblTextEncryption, lblTextDecryption;
     @Override
